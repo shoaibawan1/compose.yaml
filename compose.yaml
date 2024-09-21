@@ -1,0 +1,14 @@
+services:
+  nginx1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nginx_8855
+    ports:
+      - "8855:80"
+  nginx2:
+    image: nginx:latest
+    container_name: nginx_9955
+    ports:
+      - "9955:80"
+
